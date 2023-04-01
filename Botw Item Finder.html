@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breath of the Wild Item Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Breath of the Wild Item Finder</h1>
+  <p> <strong>Welcome to the BotW Item Finder!</strong> You can select a category from a drop-down menu then search for a specific item using the search bar. After selecting a category or performing a search, a list of clickable items will appear. When you click on an item, information about it will appear in a box below the search bar, including a image, and description.</p>
+  <br>
+  <label for="category"><em>Select a category:</em></label><br>
+  <select id="category">
+    <option value="">--Please select a category--</option>
+    <option value="creatures">Creatures</option>
+    <option value="equipment">Equipment</option>
+    <option value="materials">Materials</option>
+    <option value="monsters">Monsters</option>
+    <option value="treasure">Treasure</option>
+  </select>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names">
+  <div id="itemDetails" style="display:none" >
+    <h2 id="itemName"></h2>
+    <img id="itemImage" src="" alt="">
+    <p id="itemDescription"></p>
+  </div>
+  <ul id="results"></ul> 
+  <script src="script.js"></script>
+</body>
+</html>
